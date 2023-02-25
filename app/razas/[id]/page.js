@@ -69,15 +69,15 @@ export default function RazaID({ params }) {
 
     return(
         <div className="container">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src={`https://cdn2.thecatapi.com/images/${raza.reference_image_id}.jpg`} class="img-fluid rounded-start" alt={raza.name}/>
+            <div className="card mb-3">
+                <div className="row g-0">
+                    <div className="col-md-4">
+                        <img src={`https://cdn2.thecatapi.com/images/${raza.reference_image_id}.jpg`} className="img-fluid rounded-start" alt={raza.name}/>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">{raza.name}</h5>
-                            <p class="card-text">
+                    <div className="col-md-8">
+                        <div className="card-body">
+                            <h5 className="card-title">{raza.name}</h5>
+                            <p className="card-text">
                                 {raza.description}
                                 
                             </p>
@@ -87,7 +87,7 @@ export default function RazaID({ params }) {
                                 <span className="btn btn-warning me-2 mb-2">Esperanza de Vida: {raza.life_span}</span>
                             </div>
                             <p>Temperamento: {raza.temperament}</p>
-                            <p class="card-text"><small class="text-muted"><Link target='_blank' href={raza.wikipedia_url}>Wikipedia</Link></small></p>
+                            <p className="card-text"><small className="text-muted"><Link target='_blank' href={raza.wikipedia_url}>Wikipedia</Link></small></p>
                             <Link href="/razas" className={styles.boton}>Volver</Link>
                         </div>
                     </div>

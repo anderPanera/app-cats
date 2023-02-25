@@ -14,10 +14,7 @@ const links = [
 export default function Home() {
   return (
     <div>
-      <h1>Ander</h1>
-      {links.map((link) => (
-        <Link key={link.route} href={link.route}>{link.label}</Link>
-      ))}
+      <h1>Pagina de gatos de Ander</h1>
     </div>
   )
 }
